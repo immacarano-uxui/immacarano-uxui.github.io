@@ -2,97 +2,104 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Curriculum – Tuo Nome</title>
+  <title>Curriculum – Imma Carano</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Bootstrap -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet">
-
-  <!-- CSS custom -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="cv-page">
 
-<!-- ================= LEADER ================= -->
-<header class="leader container">
-  <span class="leader-name">Tuo Nome</span>
+  <div class="breadcrumb-mini container">
+    <nav aria-label="breadcrumb">
+      <ul class="breadcrumb-row">
+        <li><a href="index.html">Home</a></li>
+        <li class="sep">/</li>
+        <li class="active">Curriculum</li>
+      </ul>
+    </nav>
+  </div>
 
-  <nav class="leader-nav">
-    <a href="index.html">Home</a>
-    <a href="index.html#projects">Projects</a>
-    <a href="#cv" class="leader-cta">Curriculum</a>
-  </nav>
-</header>
+  <main class="container">
 
-<main class="container cv">
+    <section class="cv-hero text-center">
+      <img src="assets/img/imma.jpg" alt="Foto profilo" class="cv-avatar">
+      <h1 class="cv-name">Imma Carano</h1>
+      <p class="cv-role">Junior UXUI Designer & Commercial Account</p>
+      
+      <div class="skills-grid mt-4">
+        <span class="skill-badge">HTML5</span>
+        <span class="skill-badge">CSS3</span>
+        <span class="skill-badge">Figma</span>
+        <span class="skill-badge">UX Research</span>
+        <span class="skill-badge">Sass</span>
+        <span class="skill-badge">Bootstrap</span>
+      </div>
+    </section>
 
-  <!-- ================= CV HERO ================= -->
-  <section id="cv" class="cv-hero text-center">
+    <section class="cv-section text-center">
+      <h2>Esperienza</h2>
+      <div class="cv-card">
+        <h3>UXUI Designer</h3>
+        <span class="cv-company">Worldtours srl / Website & App</span>
+        <span class="cv-meta">2025 – Presente</span>
+        <ul class="cv-details">
+          <li>Sviluppo di interfacce web responsive con HTML, CSS e Bootstrap.</li>
+          <li>Focus sulla struttura semantica e sull'ottimizzazione dell'UX.</li>
+        </ul>
+      </div>
 
-    <img src="assets/img/imma.jpg" alt="Foto profilo" class="cv-avatar">
+      <div class="cv-card">
+        <h3>Customer Care</h3>
+        <span class="cv-company">Worldtours srl / Ufficio Prenotazioni</span>
+        <span class="cv-meta">2024 – 2025</span>
+        <ul class="cv-details">
+          <li>Gestione diretta delle prenotazioni e assistenza multilingua.</li>
+          <li>Risoluzione di problematiche complesse in tempo reale.</li>
+        </ul>
+      </div>
+    </section>
 
-    <h1 class="cv-name">Nome Cognome</h1>
-    <p class="cv-role">Junior Web Developer & UI Designer</p>
+    <section class="cv-section text-center">
+      <h2>Formazione</h2>
+      <div class="cv-card">
+        <h3>Master UXUI Designer</h3>
+        <span class="cv-company">Start2Impact</span>
+        <span class="cv-meta">2023 – Presente</span>
+        <p class="cv-description">Percorso pratico basato su progetti reali: design system, prototipazione avanzata (Figma) e sviluppo frontend moderno.</p>
+      </div>
+    </section>
 
-  </section>
+    <section class="cv-section text-center">
+      <h2>Lingue</h2>
+      <div class="ui-group">
+        <div class="skill-badge lang-badge">
+          <span>Italiano</span> <span class="lang-level">Madrelingua</span>
+        </div>
+        <div class="skill-badge lang-badge">
+          <span>Inglese</span> <span class="lang-level">B2</span>
+        </div>
+        <div class="skill-badge lang-badge">
+          <span>Spagnolo</span> <span class="lang-level">A2</span>
+        </div>
+      </div>
+    </section>
 
-  <!-- ================= EXPERIENCE ================= -->
-  <section class="cv-section text-center">
-    <h2>Esperienza</h2>
+    <section class="cv-section text-center">
+      <h2>Hobbies</h2>
+      <div class="ui-group">
+        <span class="skill-badge">✈️ Travel</span>
+        <span class="skill-badge">🎨 Digital Art</span>
+        <span class="skill-badge">📚 Tech Reading</span>
+        <span class="skill-badge">📸 Photography</span>
+      </div>
+    </section>
 
-    <div class="cv-card">
-      <h3>Junior Web Developer</h3>
-      <span class="cv-meta">2024 – Presente</span>
-      <p>
-        Sviluppo di interfacce web responsive con HTML, CSS,
-        Bootstrap e Sass, con attenzione alla struttura
-        semantica e all’esperienza utente.
-      </p>
-    </div>
-  </section>
+  </main>
 
-  <!-- ================= EDUCATION ================= -->
-  <section class="cv-section text-center">
-    <h2>Formazione</h2>
-
-    <div class="cv-card">
-      <h3>Corso Web Development</h3>
-      <span class="cv-meta">2023 – 2024</span>
-      <p>
-        Studio approfondito di HTML5, CSS3, responsive design,
-        Flexbox, Grid System, Bootstrap e Sass.
-      </p>
-    </div>
-  </section>
-
-  <!-- ================= SKILLS ================= -->
-  <section class="cv-section text-center">
-    <h2>Competenze</h2>
-
-    <ul class="cv-skills justify-content-center">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>Bootstrap</li>
-      <li>Sass</li>
-      <li>Responsive Design</li>
-      <li>UI / UX</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
-
-  <!-- ================= LANGUAGES ================= -->
-  <section class="cv-section text-center">
-    <h2>Lingue</h2>
-
-    <ul class="cv-languages justify-content-center">
-      <li>Italiano – Madrelingua</li>
-      <li>Inglese – Intermedio</li>
-    </ul>
-  </section>
-
-</main>
+  <footer class="footer text-center">
+    <p>© 2026 Imma Carano – <a href="index.html">Torna al Portfolio</a></p>
+  </footer>
 
 </body>
 </html>
