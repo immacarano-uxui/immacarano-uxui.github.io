@@ -2,314 +2,217 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Nome Cognome – Portfolio</title>
-  <meta name="description" content="Portfolio di Nome Cognome, Junior Web Developer specializzato in HTML e CSS.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imma Carano – Junior UXUI Designer Portfolio</title>
+  <meta name="description" content="Portfolio di Imma Carano, Junior UXUI Designer specializzata in interfacce web responsive, HTML e CSS.">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Nome Cognome – Portfolio">
-  <meta property="og:description" content="Portfolio personale di Nome Cognome, Web Developer.">
-  <meta property="og:image" content="https://tuosito.github.io/preview.jpg">
-  <meta property="og:url" content="https://tuosito.github.io">
-  <meta property="og:type" content="website">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-
-  <!-- Bootstrap (grid only) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="leader">
-  <input type="checkbox" id="menu-toggle">
+  <header class="leader">
+    <input type="checkbox" id="menu-toggle" hidden>
 
-  <div class="leader-inner container">
-    <span class="leader-name">Nome Cognome</span>
+    <div class="leader-inner container">
+      <span class="leader-name">Imma Carano</span>
 
-    <label for="menu-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <nav class="leader-nav">
+      <nav class="leader-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Progetti</a>
+        <a href="cv.html" class="btn-cv-header">CV</a>
+        
+        <div class="header-socials">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </nav>
+    </div>
+
+    <nav class="mobile-menu">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="cv.html">CV</a>
-      <a href="#contact">Contatti</a>
+      <a href="#projects">Progetti</a>
+      <a href="cv.html">Scarica CV</a>
+      <a href="#contact">Contattami</a>
+      <hr>
+      <div class="mobile-socials">
+          <a href="#"><i class="fab fa-github"></i> GitHub</a>
+          <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
     </nav>
-  </div>
 
-  <nav class="mobile-menu">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="cv.html">Scarica CV</a>
-    <a href="#contact">Contattami</a>
-  </nav>
+    <label for="menu-toggle" class="menu-overlay"></label>
+  </header>
 
-  <label for="menu-toggle" class="menu-overlay"></label>
-</header>
-
-
-
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <h1 class="hero-title animate">
-    Designer<br>
-    & Frontend Developer<br>
-    <span class="hero-sub">focused on clarity</span>
-  </h1>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="intro container animate">
-  <div class="intro-profile">
-    <img src="assets/img/imma.jpg" alt="Foto profilo di Nome Cognome" class="intro-avatar">
-
-   <div class="intro-text">
-  <strong>Junior Web Developer</strong>
-
-  <!-- TOGGLE -->
-  <input type="checkbox" id="about-toggle" hidden>
-
-  <!-- TESTO -->
-  <p class="about-text">
-    Creo interfacce web pulite, accessibili e completamente responsive,
-    con particolare attenzione ai dettagli e alla user experience.
-    <span class="more-text">
-      Lavoro su progetti che uniscono design e funzionalità, curando ogni
-      fase del processo, dallo studio dell’utente fino allo sviluppo frontend.
-    </span>
-  </p>
-
-  <!-- AZIONI -->
-  <div class="about-actions">
-    <label for="about-toggle" class="btn-link">
-      <span class="more">Leggi altro</span>
-      <span class="less">Mostra meno</span>
-    </label>
-
-    <a href="cv.html" class="btn-cv">Scarica il Curriculum</a>
-  </div>
-</div>
-
-</section>
-
-
-
-<!-- ================= CERTIFICATI ================= -->
-<section id="certificates" class="certificates container animate">
-
-  <h2 class="section-title">Certificazioni</h2>
-
-  <p class="section-intro">
-    Attestati ottenuti attraverso corsi di formazione e studio autonomo.
-  </p>
-
-  <div class="certificates-carousel">
-    <div class="certificates-track">
-
-      <!-- CERTIFICATO -->
-      <div class="certificate-card">
-        <img src="assets/img/cosa_fa_UX_designer.jpg" alt="Certificato HTML e CSS">
-        <p>HTML & CSS – Base</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="assets/img/cosa_fa_UX_designer.jpg" alt="Certificato Responsive Design">
-        <p>Responsive Web Design</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="assets/img/cosa_fa_UX_designer.jpg" alt="Certificato UX Design">
-        <p>UX Design Fundamentals</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="assets/img/cosa_fa_UX_designer.jpg" alt="Certificato Git">
-        <p>Git & GitHub</p>
-      </div>
-
-      <!-- DUPLICATI per loop infinito -->
-      <div class="certificate-card">
-        <img src="assets/img/cosa_fa_UX_designer.jpg" alt="">
-        <p>HTML & CSS – Base</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="assets/img/cosa_fa_UX_designer.jpg" alt="">
-        <p>Responsive Web Design</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="projects">
-  <div class="container">
-
-    <div class="row g-5 justify-content-center">
-
-      <!-- PROJECT CARD -->
-      <div class="col-12 col-md-6 animate">
-        <article class="project-card">
-
-          <div class="project-image">
-            <img src="assets/img/cosa_fa_UX_designer.jpg" alt="Landing page UI design">
-            <a href="progetto-1.pdf" class="download-overlay" aria-label="Apri progetto Landing Page UI"></a>
-          </div>
-
-          <h3>Landing Page UI</h3>
-          <p>Design essenziale orientato alla chiarezza visiva.</p>
-
-          <div class="badges">
-            <span class="badge violet">UI</span>
-            <span class="badge blue">UX</span>
-          </div>
-
-          <div class="checklist">
-            <span>✓ Responsive</span>
-            <span>✓ Minimal</span>
-            <span>✓ Design system</span>
-          </div>
-
-        </article>
-      </div>
-
-       <!-- PROJECT CARD -->
-      <div class="col-12 col-md-6 animate">
-        <article class="project-card">
-
-          <div class="project-image">
-            <img src="assets/img/cosa_fa_UX_designer.jpg" alt="Landing page UI design">
-            <a href="progetto-1.pdf" class="download-overlay" aria-label="Apri progetto Landing Page UI"></a>
-          </div>
-
-          <h3>Landing Page UI</h3>
-          <p>Design essenziale orientato alla chiarezza visiva.</p>
-
-          <div class="badges">
-            <span class="badge violet">UI</span>
-            <span class="badge blue">UX</span>
-          </div>
-
-          <div class="checklist">
-            <span>✓ Responsive</span>
-            <span>✓ Minimal</span>
-            <span>✓ Design system</span>
-          </div>
-
-        </article>
-      </div>
-
-       <!-- PROJECT CARD -->
-      <div class="col-12 col-md-6 animate">
-        <article class="project-card">
-
-          <div class="project-image">
-            <img src="assets/img/cosa_fa_UX_designer.jpg" alt="Landing page UI design">
-            <a href="progetto-1.pdf" class="download-overlay" aria-label="Apri progetto Landing Page UI"></a>
-          </div>
-
-          <h3>Landing Page UI</h3>
-          <p>Design essenziale orientato alla chiarezza visiva.</p>
-
-          <div class="badges">
-            <span class="badge violet">UI</span>
-            <span class="badge blue">UX</span>
-          </div>
-
-          <div class="checklist">
-            <span>✓ Responsive</span>
-            <span>✓ Minimal</span>
-            <span>✓ Design system</span>
-          </div>
-
-        </article>
-      </div>
-
+  <section class="hero">
+    <h1 class="hero-title animate">
+      Designer<br>
+      & Frontend Developer<br>
+      <span class="hero-sub">focused on clarity</span>
+    </h1>
+  </section>
+  
+  <section id="about" class="intro container animate">
+    <div class="intro-profile">
+      <img src="assets/img/imma.jpg" alt="Foto profilo" class="intro-avatar">
       
+      <div class="about-content">
+        <h3>Junior UXUI Designer</h3>
+        
+        <input type="checkbox" id="about-toggle" hidden>
+        
+        <p class="about-text">
+            Creo interfacce web pulite, accessibili e completamente responsive...
+            <span class="more-text">
+                Oltre al design, mi appassiona trasformare i mockup in codice pulito usando HTML, CSS e JavaScript, garantendo un'esperienza utente fluida su ogni dispositivo.
+            </span>
+        </p>
 
-      <!-- PROJECT CARD -->
-      <div class="col-12 col-md-6 animate">
-        <article class="project-card">
-
-          <div class="project-image">
-            <img src="assets/img/cosa_fa_UX_designer.jpg" alt="Portfolio web HTML e CSS">
-            <a href="progetto-2.pdf" class="download-overlay" aria-label="Apri progetto Portfolio Web"></a>
-          </div>
-
-          <h3>Portfolio Web</h3>
-          <p>Sito personale sviluppato in HTML e CSS con approccio mobile-first.</p>
-
-          <div class="badges">
-            <span class="badge pink">Web</span>
-            <span class="badge blue">Frontend</span>
-          </div>
-
-          <div class="checklist">
-            <span>✓ HTML</span>
-            <span>✓ CSS</span>
-            <span>✓ Mobile-first</span>
-          </div>
-
-        </article>
+        <div class="about-actions">
+            <label for="about-toggle" class="btn-link">
+                <span class="more">Leggi di più</span>
+                <span class="less">Leggi di meno</span>
+            </label>
+            <a href="#contact" class="btn-action-primary">Lavoriamo insieme</a>
+        </div>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="row g-5 justify-content-center">
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay">
+                <span class="badge pink">Web</span>
+                <span class="badge blue">Frontend</span>
+              </div>
+              <img src="assets/img/Progetto senza titolo (1).jpg" alt="Progetto 1">
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Web 1</h3>
+              <p>Sito personale sviluppato in HTML e CSS con approccio mobile-first.</p>
+              <div class="checklist">
+                <span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span>
+              </div>
+              <div class="card-action">
+                <a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Visualizza Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="contact">
-  <div class="contact-inner animate">
-    <h2>Get in touch</h2>
-    <p>Hai un progetto o una collaborazione in mente?</p>
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay">
+                <span class="badge pink">UI Design</span>
+                <span class="badge blue">Figma</span>
+              </div>
+              <img src="assets/img/Progetto senza titolo (1).jpg" alt="Progetto 2">
+            </div>
+            <div class="project-content">
+              <h3>App Mobile Design</h3>
+              <p>Progettazione di un'interfaccia intuitiva per il monitoraggio fitness.</p>
+              <div class="checklist">
+                <span>✓ UX Research</span> <span>✓ Figma</span> <span>✓ Prototype</span>
+              </div>
+              <div class="card-action">
+                <a href="#" class="btn-case-study" target="_blank">Visualizza Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-    <form class="contact-form">
-      <label>
-        Nome
-        <input type="text" name="name" required>
-      </label>
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay">
+                <span class="badge pink">E-commerce</span>
+                <span class="badge blue">UX UI</span>
+              </div>
+              <img src="assets/img/Progetto senza titolo (1).jpg" alt="Progetto 3">
+            </div>
+            <div class="project-content">
+              <h3>Redesign Store Online</h3>
+              <p>Ottimizzazione del funnel di acquisto per un brand di arredamento.</p>
+              <div class="checklist">
+                <span>✓ UX Audit</span> <span>✓ High-Fidelity</span> <span>✓ Accessibility</span>
+              </div>
+              <div class="card-action">
+                <a href="#" class="btn-case-study" target="_blank">Visualizza Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-      <label>
-        Email
-        <input type="email" name="email" required>
-      </label>
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay">
+                <span class="badge pink">Brand</span>
+                <span class="badge blue">Web Design</span>
+              </div>
+              <img src="assets/img/Progetto senza titolo (1).jpg" alt="Progetto 4">
+            </div>
+            <div class="project-content">
+              <h3>Landing Page Evento</h3>
+              <p>Creazione di una landing page ad alto impatto per conferenze tech.</p>
+              <div class="checklist">
+                <span>✓ JavaScript</span> <span>✓ Animations</span> <span>✓ SEO</span>
+              </div>
+              <div class="card-action">
+                <a href="#" class="btn-case-study" target="_blank">Visualizza Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <label>
-        Messaggio
-        <textarea name="message" rows="4" required></textarea>
-      </label>
+  <section id="contact" class="contact">
+    <div class="contact-inner animate">
+      <h2>Get in touch</h2>
+      <p>Hai un progetto o una collaborazione in mente?</p>
 
-      <button type="submit">Invia messaggio</button>
-    </form>
-  </div>
-</section>
+      <form class="contact-form">
+        <label>Nome <input type="text" name="name" required placeholder="Inserisci il tuo nome"></label>
+        <label>Email <input type="email" name="email" required placeholder="la-tua@email.com"></label>
+        <label>Messaggio <textarea name="message" rows="4" required placeholder="Di cosa hai bisogno?"></textarea></label>
+        <button type="submit">Invia messaggio</button>
+      </form>
+    </div>
+  </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p class="footer-note">Designed & built with care.</p>
-  <p>© 2025 Nome Cognome</p>
+  <footer class="footer">
+    <p class="footer-note">Designed & built with care.</p>
+    <p>© 2026 Imma Carano</p>
+    <div class="footer-links">
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
 
-  <div class="footer-links">
-    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-  </div>
-</footer>
-
-<!-- JS opzionale (non fondamentale per il funzionamento) -->
-<script src="scroll.js"></script>
-
+  <script>
+    const elements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    elements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
